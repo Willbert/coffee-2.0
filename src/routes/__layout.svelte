@@ -6,15 +6,24 @@
 
 <Header />
 
-<main>
-  <Nav />
+<main class="main">
+  <!-- <Nav /> -->
   <slot></slot>
 </main>
 
 <Footer />
 
 <style lang="scss">
+  :global {
+    @import 'glidecss/reset';
+  }
   :global(body) {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
     font-family: theme(font, family, sans);
+  }
+  .main {
+    @include modes(background-color, (palette, primary, 6));
   }
 </style>

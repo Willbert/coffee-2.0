@@ -18,3 +18,7 @@
     </ul>
   </Box>
 {/each}
+
+<style lang="scss">
+
+</style>

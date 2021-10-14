@@ -29,3 +29,7 @@
   <button on:click={() => choose(choice)}>{choice.current}</button>
   {/each}
 </ul>
+
+<style lang="scss">
+
+</style>
