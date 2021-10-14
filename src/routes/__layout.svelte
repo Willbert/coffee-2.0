@@ -1,16 +1,20 @@
-
 <script>
-  import Nav from '../components/nav.svelte'
+  import Nav from '../components/Nav.svelte'
   import Header from '../components/Header.svelte'
   import Footer from '../components/Footer.svelte'
 </script>
 
 <Header />
 
-<div>
+<main>
   <Nav />
   <slot></slot>
-</div>
+</main>
 
 <Footer />
 
+<style lang="scss">
+  :global(body) {
+    font-family: theme(font, family, sans);
+  }
+</style>

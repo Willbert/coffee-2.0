@@ -1,7 +1,5 @@
-
 <script>
-  import Coffee from '../components/coffee.svelte'
+  import Coffee from '../components/Coffee.svelte'
 </script>
-
 
 <Coffee />
