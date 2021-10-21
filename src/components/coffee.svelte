@@ -46,8 +46,12 @@
 
 <style lang="scss">
   .coffee {
-    margin: 0 auto;
-    @include screens(max-width, (DEFAULT: 60ch));
-    @include screens(padding, (DEFAULT: theme(spacing, 7)));
+    @include screens(max-width, (DEFAULT: 72ch));
+    
+    @include screens(padding, (
+      DEFAULT: theme(spacing, 8),
+      md: theme(spacing, 9),
+      lg: theme(spacing, 10)
+    ));
   }
 </style>

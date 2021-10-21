@@ -24,6 +24,8 @@
     font-family: theme(font, family, sans);
   }
   .main {
+    display: flex;
+    justify-content: center;
     @include modes(background-color, (palette, primary, 6));
   }
 </style>

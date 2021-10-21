@@ -26,15 +26,10 @@
 
 <ul>
   {#each flow as choice}
-    <button class="button--{choice.handle}" on:click={() => choose(choice)}>{choice.current}</button>
+  <button on:click={() => choose(choice)}>{choice.current}</button>
   {/each}
 </ul>
 
 <style lang="scss">
-.button {
-    border-radius: theme(radius);
-    min-width: 26ch;
-    @include screens(font-size, (font, size, 3));
-    @include screens(padding, (DEFAULT: theme(spacing, 2) + theme(spacing, 1)));
-  }
+
 </style>
