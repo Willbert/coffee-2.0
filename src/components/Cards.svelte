@@ -1,9 +1,14 @@
 <script>
-  import Box from "./Box.svelte";
+  import { read } from "../store"
+  import flow from '../flow'
+  import Box from "./Box.svelte"
+  import { onMount } from 'svelte'
+  let cards = []
 
-  const store = localStorage.getItem('cards');
+  onMount(() => {
+    cards = read()
+  })
 
-  let cards = store ? JSON.parse(store) : [];
 </script>
 
 {#each cards as card}
@@ -13,12 +18,8 @@
     </svg>
     <h1>Coffee</h1>
     <ul>
-      <li>Current State: {card.current}</li>
-      <li>Recommendation: {card.recomendations.join(' and ')}</li>
+      <li>Current State: {flow.find(object => object.handle === card.handle).current}</li>
+      <li>Recommendation: {flow.find(object => object.handle === card.handle).recommendations.join(' and ')}</li>
     </ul>
   </Box>
 {/each}
-
-<style lang="scss">
-
-</style>

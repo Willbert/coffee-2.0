@@ -3,12 +3,13 @@
   import Fields from './Fields.svelte';
   import Field from './Field.svelte';
   import Button from './Button.svelte';
+
 </script>
 
 <section class="coffee">
   <Heading>How is your coffee today?</Heading>
 
-  <form>
+  <form action="/taste">
     <Fields>
       <Field
         name="coffee-name"
@@ -39,15 +40,16 @@
         modifier="third"
       />
     </Fields>
-    
-    <Button modifiers={['default', 'full']}>Brew</Button>
+
+    <Button modifiers={['default', 'full']} type="submit">Brew</Button>
   </form>
+  <a href="/history">skip to history —></a>
 </section>
 
 <style lang="scss">
   .coffee {
     @include screens(max-width, (DEFAULT: 72ch));
-    
+
     @include screens(padding, (
       DEFAULT: theme(spacing, 8),
       md: theme(spacing, 9),
