@@ -6,11 +6,13 @@
     const urlSearchParams = new URLSearchParams(window.location.search);
     const params = Object.fromEntries(urlSearchParams.entries());
 
-    add({ ...params, handle: choice.handle })
+    const uniqueId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+
+    add({ ...params, handle: choice.handle, date: new Date(), id: uniqueId })
   }
 </script>
 
-<ul>
+<ul class="choice-list">
   {#each flow as choice}
     <li class="choice">
       <a class="link link--{choice.handle}" on:click={() => choose(choice)} href="/history">{choice.current}</a>
@@ -19,6 +21,9 @@
 </ul>
 
 <style lang="scss">
+  .choice-list {
+    @include screens(margin-top, (DEFAULT: theme(spacing, 4)));
+  }
   .choice {
     display: block;
     @include screens(margin-bottom, (DEFAULT: theme(spacing, 4)));

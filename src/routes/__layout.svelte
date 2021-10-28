@@ -17,9 +17,7 @@
     @import 'glidecss/reset';
   }
   :global(body) {
-    display: grid;
     height: 100vh;
-    grid-template-rows: auto 1fr auto;
     font-family: theme(font, family, sans);
   }
   .main {
