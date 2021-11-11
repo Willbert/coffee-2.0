@@ -1,11 +1,22 @@
 <script>
+  import { read } from "../store"
   import Logo from "./Logo.svelte"
   import HistoryLogo from "./History-logo.svelte"
+  import { onMount } from 'svelte'
+
+  let cards = []
+
+  onMount(() => {
+    cards = read()
+  })
+
 </script>
 
 <header class="header">
     <Logo />
-    <HistoryLogo />
+    {#if cards.length}
+      <HistoryLogo />
+    {/if}
 </header>
 
 <style lang="scss">

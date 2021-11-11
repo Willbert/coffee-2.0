@@ -2,11 +2,15 @@
   import { read, remove } from "../store"
   import flow from '../flow'
   import Box from "./Box.svelte"
-  import { onMount } from 'svelte'
+  import { onMount, afterUpdate } from 'svelte'
 
   let cards = []
 
   onMount(() => {
+    cards = read()
+  })
+
+  afterUpdate(() => {
     cards = read()
   })
 
