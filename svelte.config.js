@@ -1,6 +1,7 @@
 import preprocess from 'svelte-preprocess';
 import path, { dirname } from 'path'
 import { fileURLToPath } from 'url'
+import adapter from '@sveltejs/adapter-static';
 
 const filePath = dirname(fileURLToPath(import.meta.url))
 const sassPath = `${filePath}/src/style/`
@@ -8,6 +9,7 @@ const sassPath = `${filePath}/src/style/`
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
+		adapter: adapter(),
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte'
 	},

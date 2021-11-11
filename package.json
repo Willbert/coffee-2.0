@@ -11,7 +11,8 @@
     "glidecss": "^0.9.14",
     "sass": "^1.43.2",
     "svelte": "^3.42.6",
-    "svelte-preprocess": "^4.9.8"
+    "svelte-preprocess": "^4.9.8",
+    "@sveltejs/adapter-static": "^1.0.0-next.21"
   },
   "type": "module"
 }
