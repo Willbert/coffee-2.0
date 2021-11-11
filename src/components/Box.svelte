@@ -4,7 +4,7 @@
 </script>
 
 <div class="box box--{modifier}" transition:fade>
-  <slot></slot>
+  <slot/>
 </div>
 
 <style lang="scss">
