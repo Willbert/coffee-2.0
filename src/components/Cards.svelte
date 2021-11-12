@@ -36,6 +36,7 @@
       </svg>
       <h1 class="name">{card.name}</h1>
       <span class="date">{new Intl.DateTimeFormat('en-GB', options).format(new Date(card.date))}</span>
+      <span class="previous">Dose: {card.dose}g Yield: {card.yield}g Time: {card.time}s</span>
       <ul class="list">
         <li class="state">Current State: {flow.find(object => object.handle === card.handle).current}</li>
         <li class="recommendation">Recommendation: {flow.find(object => object.handle === card.handle).recommendations.join(' and ')}</li>
@@ -61,6 +62,12 @@
     text-align: center;
   }
   .date {
+    display: block;
+    font-weight: theme(font, weight, bold);
+    @include screens(font-size, (font, size, 2));
+    text-align: center;
+  }
+  .previous {
     display: block;
     font-weight: theme(font, weight, bold);
     @include screens(font-size, (font, size, 2));
