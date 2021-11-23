@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Coffee 2.0 — History</title>
+  <title>Coffee 2.0 — History</title>
 </svelte:head>
 
 <Cards />

@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Coffee 2.0 — Coffee brewed better</title>
+  <title>Coffee 2.0 — Coffee brewed better</title>
 </svelte:head>
 
 <Coffee />
