@@ -1,13 +1,14 @@
 <script>
   import Button from './Button.svelte'
+  const url = 'https://www.buymeacoffee.com/TeamAlbionLL'
 </script>
 
 <footer class="footer">
   <p class="sponsor">
-    <Button modifiers={['ghost']}>Buy us a coffee?</Button>
+    <Button modifiers={['ghost']} source={url}>Buy us a coffee?</Button>
   </p>
   <p class="copyright">
-    <a href="/history">@ 2021 Emma, Flávio, Jamie & William</a>
+    <a target="_blank" href={url}>@ 2021 Emma, Flávio, Jamie & William</a>
   </p>
 </footer>
 
@@ -22,11 +23,11 @@
       lg: theme(spacing, 6)
     ));
   }
-  
+
   .sponsor {
     @include screens(padding, (DEFAULT: theme(spacing, 4)));
   }
-  
+
   .copyright {
     @include screens(padding, (DEFAULT: theme(spacing, 4)));
   }
