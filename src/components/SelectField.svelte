@@ -23,7 +23,8 @@
     ));
   }
   .hint {
-    @include modes(color, (palette, primary, 8));
+    color: #545150;
+    /* @include modes(color, (palette, primary, 8)); */
     @include screens(margin-bottom, (DEFAULT: theme(spacing, 2)));
 
     @include screens(font-size, (

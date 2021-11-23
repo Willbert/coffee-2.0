@@ -15,7 +15,7 @@
 <style lang="scss">
   .footer {
     text-align: center;
-    @include modes(color, (palette, primary, 8));
+    @include modes(color, (palette, primary, 7));
     @include modes(background, (palette, primary, 9));
     @include screens(padding, (
       DEFAULT: theme(spacing, 4),
