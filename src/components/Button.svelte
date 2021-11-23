@@ -1,6 +1,7 @@
 <script>
   export let modifiers = ['default']
   export let source
+  export let ariaLabel
 
   const classes = modifiers.map(modifier => `button--${modifier}`).join(' ')
 
@@ -11,7 +12,11 @@
   }
 </script>
 
-<button class="button {classes}" on:click={handleClick(source)}>
+<button
+  class="button {classes}"
+  on:click={handleClick(source)}
+  aria-label="{ariaLabel}"
+>
   <slot />
 </button>
 

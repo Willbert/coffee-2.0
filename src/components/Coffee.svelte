@@ -40,7 +40,7 @@
       />
     </Fields>
 
-    <Button modifiers={['default', 'full']} type="submit">Brew</Button>
+    <Button modifiers={['default', 'full']} type="submit" ariaLabel="Brew coffee">Brew</Button>
   </form>
 </section>
 

@@ -1,6 +1,6 @@
 
 <span>
-  <button class="logo" onclick="location.replace('/')">
+  <button class="logo" onclick="location.replace('/')" aria-label="Cofee 2.0 logo">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="50" version="1.1" x="0px" y="0px" viewBox="100 0 100 100" style="enable-background:new 0 0 91 91; display: inline;" xml:space="preserve">
       <g>
         <path fill="#55CDFC" d="M77.5,22.2c8.8,11.6,9.7,28.6,3.2,41.6c-6.9,13.8-22.5,21-37.6,20.3C27.6,83.4,13.8,73.9,8.6,59.2   c-5.1-14.5-2-30.8,9.2-41.6c6.7-6.4,15.9-10,25.1-10.9c5-0.5,9.8,0,14.6,1.3c4.9,1.3,9.3,3.9,14.1,5.2c0.6,0.1,1.2-0.5,0.8-1.1   C67.3,4.2,55.6,1.5,46.8,1.4c-9.2-0.1-19,2.5-26.7,7.7C5.4,18.9-1.3,36.6,1.8,53.7C5,71,18.2,84.9,35.4,88.2   c16.5,3.2,35.3-2.4,45.6-16.1c11-14.6,11.7-37.6,0.7-52.5C79.9,17.1,75.5,19.6,77.5,22.2z" />

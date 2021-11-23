@@ -5,7 +5,7 @@
 
 <footer class="footer">
   <p class="sponsor">
-    <Button modifiers={['ghost']} source={url}>Buy us a coffee?</Button>
+    <Button modifiers={['ghost']} source={url} ariaLabel='Buy us a coffee'>Buy us a coffee?</Button>
   </p>
   <p class="copyright">
     <a target="_blank" href={url}>@ 2021 Emma, Flávio, Jamie & William</a>
