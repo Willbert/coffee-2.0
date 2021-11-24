@@ -1,7 +1,8 @@
 <script>
   import Button from './Button.svelte'
-  const url = 'https://www.buymeacoffee.com/TeamAlbionLL'
+  const url = 'https://ko-fi.com/coffee2point0'
 </script>
+
 
 <footer class="footer">
   <p class="sponsor">
@@ -11,6 +12,7 @@
     <a target="_blank" rel="noreferrer" href={url}>@ 2021 Emma, Flávio, Jamie & William</a>
   </p>
 </footer>
+
 
 <style lang="scss">
   .footer {
